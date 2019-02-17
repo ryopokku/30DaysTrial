@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+/* common
+================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* header
+================================================== */
+
+header {
+  height: 100px;
+  width: 100%;
+  color: #fff;
+  background: #3F51B5;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, .16);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  position: fixed;
+}
+
+header h1 {
+  margin-left: 10.2489vw;
+}
+header h1 img {
+  height: 39px;
+  width: 200px;
+}
+
+nav ul {
+  margin-right: 10.2489vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul li {
+  margin-left: 2.1962vw;
+  line-height: 26px;
+}
+nav ul li:hover {
+  border-bottom: 3px solid #E81919;
+}
+
+
+/*  main visual
+================================================== */
+.main-visual {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-visual img {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+}
+.main-visual .inner {
+  width: 100%;
+  position: absolute;
+  top: calc(50% - 100px);
+  left: 0;
+}
+.main-visual h2 {
+  font-size: 6.8rem;
+  line-height: 87px;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+}
+.main-visual span {
+  display: block;
+  font-size: 3.8rem;
+  line-height: 49px;
+  margin-top: 12px;
+}
+
+.main-visual a {
+  display: block;
+  width: 390px;
+  height: 83px;
+  background: #3F51B5;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 3.8rem;
+  line-height: 49px;
+  text-align: center;
+  padding: 17px 81px;
+  margin: 11.6976vh auto 0;
+}
+
+main {
+  padding-top: 100vh;
+}
+#test .inner {
+  width: 100%;
+}
+
+/*  media queries
+================================================== */
+
+/* 上記まではすべてのデバイス／画面サイズに共通
+かつ　920より上：PC（デスクトップ）
+---------------------------------------- */
+
+/* 920以下：PC（デスクトップ/タブレット横）
+---------------------------------------- */
+@media screen and (max-width: 920px) {
+
+  .main-visual h2 {
+    font-size: 5.5rem;
+  }
+  .main-visual span {
+    font-size: 3.0rem;
+  }
+
+  .main-visual a {
+    width: 312px;
+    height: 66px;
+    line-height: 66px;
+    font-size: 3.0rem;
+    padding: 0 1.5em;
+  }
+}
+
+/*  768以下：iPad縦 / iPhone 7/6 Plus横
+---------------------------------------- */
+@media screen and (max-width: 768px) {
+
+  header h1 {
+    margin-left: 5vw;
+  }
+
+  nav ul {
+    margin-right: 5vw;
+  }
+
+  .main-visual h2 {
+    font-size: 4.4rem;
+  }
+  .main-visual span {
+    font-size: 2.4rem;
+  }
+
+}
+
+/* 480未満：iPhone 7/6 Plus縦
+---------------------------------------- */
+@media screen and (max-width: 480px) {
+
+  nav {
+    display: none;
+  }
+
+  .main-visual h2 {
+    font-size: 3.5rem;
+    line-height: 1.8;
+  }
+  .main-visual span {
+    font-size: 1.9rem;
+  }
+
+  .main-visual a {
+    width: 300px;
+    margin: 8vh auto 0;
+  }
+
+}
