@@ -72,6 +72,7 @@ nav ul li {
 }
 nav ul li:hover {
   border-bottom: 3px solid #E81919;
+  margin-bottom: -3px;
 }
 
 
