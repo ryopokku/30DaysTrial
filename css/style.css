@@ -46,7 +46,7 @@ ul {
 }
 
 main {
-  padding-top: calc(100vh + 68px);
+  padding-top: calc(100vh + 60px);
 }
 
 /* header
@@ -151,14 +151,14 @@ nav ul li:hover {
   font-size: 6.0rem;
   width: 138px;
   height: 77px;
-  margin: 0 auto 113px;
+  margin: 0 auto 120px;
   position: relative;
 }
 .heading:after {
   content: '';
   position: absolute;
   width: 76px;
-  top: calc(100% + 44px);
+  top: calc(100% + 50px);
   left: calc(50% - 76px / 2);
   border-top: 5px solid #3F51B5;
 }
