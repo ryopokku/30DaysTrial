@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/* common
+================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+a {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+  font-size: 1.6rem;
+  background: #efefef;
+}
+
+.site-wrap {
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  position: relative; /* head-17のz-index対策 */
+}
+
+
+/* head-12
+================================================== */
+
+.head-12 {
+  width: 226px;
+  height: 31px;
+  font-size: 2.4rem;
+  line-height: 31px;
+  padding-left: 30px;
+  position: relative;
+}
+.head-12::before {
+  content: '';
+  background: url(../img/check.svg) no-repeat center left;
+  width: 30px;
+  height: 31px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* head-16
+================================================== */
+.head-16 {
+  width: 215px;
+  height: 41px;
+  padding: 5px 9px;
+  font-size: 2.4rem;
+  line-height: 31px;
+  background: repeating-linear-gradient(-45deg, #A7BAFF, #A7BAFF 10px,#7385e9 10px, #7385e9 20px);
+}
+
+
+/* head-17
+================================================== */
+.head-17 {
+  width: 215px;
+  height: 41px;
+  padding: 5px 9px;
+  font-size: 2.4rem;
+  line-height: 31px;
+  position: relative;
+  z-index: 0;
+  }
+.head-17::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 215px;
+  height: 20px;
+  background: repeating-linear-gradient(-45deg, #A7BAFF, #A7BAFF 10px,#7385e9 10px, #7385e9 20px);
+  z-index: -1;
+}
+
+
+
+/* btn-2
+================================================== */
+
+.btn-2 {
+  display: block;
+  width: 230px;
+  height: 50px;
+  background: #3F51B5;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  line-height: 50px;
+  padding-left: 16px;
+  position: relative;
+}
+.btn-2::after {
+  content: '';
+  background: url(../img/arrow.svg) no-repeat center right;
+  position: absolute;
+  top: 0;
+  right: 12px;
+  width: 15px;
+  height: 50px;
+}
+
+
+/* btn-3
+================================================== */
+
+.btn-3 {
+  display: block;
+  width: 230px;
+  height: 50px;
+  background: #3F51B5;
+  border-radius: 3px;
+  padding-left: 16px;
+}
+.btn-3 div {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 50px;
+  position: relative;
+}
+.btn-3 div::after {
+  content: '';
+  background: url(../img/arrow.svg) no-repeat center left;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 15px;
+  height: 50px;
+}
+
+/* ref
+================================================== */
+
+.ref {
+  border: 1px dotted #ccc;
+  padding: 20px;
+}
+.ref h2 {
+  margin-bottom: 10px;
+}
+.ref a {
+  color: #212529;
+}
